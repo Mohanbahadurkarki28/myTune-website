@@ -29,6 +29,14 @@ a{
 .conatiner{
     max-width: 1200px;
 }
+.container h4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 header{
     background-color: var(--purple300);
     position: sticky;
@@ -103,14 +111,62 @@ nav ul li:hover{
     position: relative;
     top: 400px;
 }
-button{
+.primary-button{
     padding: 10px 15px;
     border: none;
     transition: 0.2s ease-in-out;
     background-color: #dc0000;
     color: white;
 }
+.secondary-button{
+    background-color: var(--purple300);
+    padding: 8px;
+    color: white;
+}
 button:hover{
     opacity: 0.8;
     transition: 0.2s ease-in-out;
+}
+
+.about-music{
+    margin-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.video-section{
+    background-image: url(images/video.png);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color:white;
+    text-align: center;
+}
+
+.video-section .container{
+    display: flex;
+    flex-direction:column;
+    gap: 30px;
+    margin-top: -200px;    
+}
+.hero-section, 
+.video-section{
+    position: relative;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
